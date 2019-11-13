@@ -1,0 +1,6 @@
+framework module Pods_Taptic_Engine {
+  umbrella header "Pods-Taptic Engine-umbrella.h"
+
+  export *
+  module * { export * }
+}

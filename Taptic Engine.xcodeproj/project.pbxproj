@@ -13,6 +13,7 @@
 		1B7778CE237B8BD100880376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7778CC237B8BD100880376 /* Main.storyboard */; };
 		1B7778D0237B8BD400880376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7778CF237B8BD400880376 /* Assets.xcassets */; };
 		1B7778D3237B8BD400880376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7778D1237B8BD400880376 /* LaunchScreen.storyboard */; };
+		5251D1A0DDC98F5F171ED3B0 /* Pods_Taptic_Engine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EF201D15537896A8E2E9DA /* Pods_Taptic_Engine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1B7778CF237B8BD400880376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B7778D2237B8BD400880376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B7778D4237B8BD400880376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EC86969FDFDC431EF7D313 /* Pods-Taptic Engine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taptic Engine.release.xcconfig"; path = "Target Support Files/Pods-Taptic Engine/Pods-Taptic Engine.release.xcconfig"; sourceTree = "<group>"; };
+		E1EF201D15537896A8E2E9DA /* Pods_Taptic_Engine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taptic_Engine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB43B0F54E8432B9006D3F25 /* Pods-Taptic Engine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taptic Engine.debug.xcconfig"; path = "Target Support Files/Pods-Taptic Engine/Pods-Taptic Engine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5251D1A0DDC98F5F171ED3B0 /* Pods_Taptic_Engine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1B7778C5237B8BD100880376 /* Taptic Engine */,
 				1B7778C4237B8BD100880376 /* Products */,
+				A410CF313011D61C0DF76C14 /* Pods */,
+				35ADBF47E22C1759F60D0615 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Taptic Engine";
 			sourceTree = "<group>";
 		};
+		35ADBF47E22C1759F60D0615 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1EF201D15537896A8E2E9DA /* Pods_Taptic_Engine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A410CF313011D61C0DF76C14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB43B0F54E8432B9006D3F25 /* Pods-Taptic Engine.debug.xcconfig */,
+				45EC86969FDFDC431EF7D313 /* Pods-Taptic Engine.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B7778D7237B8BD400880376 /* Build configuration list for PBXNativeTarget "Taptic Engine" */;
 			buildPhases = (
+				EB025F64D4EC777DA542BC9D /* [CP] Check Pods Manifest.lock */,
 				1B7778BF237B8BD100880376 /* Sources */,
 				1B7778C0237B8BD100880376 /* Frameworks */,
 				1B7778C1237B8BD100880376 /* Resources */,
+				51596168E636556AD40B2980 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51596168E636556AD40B2980 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Taptic Engine/Pods-Taptic Engine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Taptic Engine/Pods-Taptic Engine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Taptic Engine/Pods-Taptic Engine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB025F64D4EC777DA542BC9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Taptic Engine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B7778BF237B8BD100880376 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		1B7778D8237B8BD400880376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB43B0F54E8432B9006D3F25 /* Pods-Taptic Engine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		1B7778D9237B8BD400880376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45EC86969FDFDC431EF7D313 /* Pods-Taptic Engine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
